@@ -1,4 +1,4 @@
-**UP TO DATE**
+**UPTODATE**
 ==================
 
 The primary focus of this application is not on **What** to build rather on **How** to build and explore all
