@@ -14,3 +14,11 @@ dependencyResolutionManagement {
 }
 rootProject.name = "UpToDate"
 include ':app'
+include ':navigation'
+include ':home'
+include ':core'
+include ':core:network'
+include ':core:domain'
+include ':core:persistence'
+include ':favourites'
+include ':bottom-bar'
