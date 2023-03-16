@@ -28,7 +28,7 @@ The core architecture of the app follows **MVVM** and elements of **Functional R
 
 The main paradigm followed is FRP paradigm which is an endless cycle of states and events: State -> Event -> State' -> Event' -> State'' -> …. 
 Every FRP program starts with an initial state that will be updated with each event it receives.
-![Design](https://static.wixstatic.com/media/fdfbff_fe5eb544788041bfa633f7f9f7f7b6de~mv2.jpg)
+![Design](https://static.wixstatic.com/media/fdfbff_c281e26662c8470dbb260e3c97e6a510~mv2.png)
 
 
 
