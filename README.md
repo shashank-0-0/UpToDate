@@ -38,8 +38,8 @@ Every FRP program starts with an initial state that will be updated with each ev
 It helps to separate concerns and improve code maintainability and testability by dividing the app into three components :
 the Model (data layer), the View (UI layer), and the ViewModel (glue layer between the Model and the View).
 
-- The android world is filled with **events** originating from user or android system and based on those events the **state**  
-need to be updated,This is where Functional Reactive Programming pattern can be utilized.Functional Reactive Programming (FRP) is a programming 
+- The android world is filled with **events** originating from user or android system and based on those events the **state** needs
+to be updated , This is where Functional Reactive Programming pattern can be utilized.Functional Reactive Programming (FRP) is a programming 
 paradigm that is based on the concept of reactive streams, which are a sequence of events that can be observed and reacted to. 
 
 - By combining MVVM with FRP, we can benefit from the strengths of both patterns.
