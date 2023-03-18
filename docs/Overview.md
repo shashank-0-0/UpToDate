@@ -98,8 +98,18 @@ This way we ensure our Ui is reactive and always has the latest UiState
 
 ### Actions
 
-Actions refers to Functions that have side-effects , For example, sending HTTP requests or querying a database.
+Actions refers to Functions that have side-effects . For example, sending HTTP requests or querying a database.
 These are alternate to **repositories** in typical MVVM approach or **use cases** in Clean Architecture.
+
+Actions basically are closely related to the concept of "signals" or "events" in FRP (Functional Reactive Programming).
+In FRP, signals are used to represent data streams that can be transformed and combined in various ways to produce new
+signals.
+
+Similarly, Actions in MVVM+FRP are functions that represent a stream of data that can be transformed and combined to 
+produce new streams of data. Actions are typically used to represent domain logic such as network requests or database queries,
+and can be composed together to build more complex functionality.
+
+Few Actions defined so far in the application [ImagesFlow](../core/persistence/src/main/java/com/example/persistence/actions/ImagesFlow.kt) [SaveImageAction](../core/persistence/src/main/java/com/example/persistence/actions/SaveImageAction.kt)
 
 
 
