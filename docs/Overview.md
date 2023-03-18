@@ -16,7 +16,7 @@ The app consists of the following modules.
    </td>
    <td><strong>Responsibilities</strong>
    </td>
-   <td><strong>Key classes</strong>
+   <td><strong>Key classes and dependencies</strong>
    </td>
   </tr>
   <tr>
@@ -25,95 +25,15 @@ The app consists of the following modules.
    <td>Top level module that combines the whole application's modules.Defines all the composable screens and sets up the navigation 
    </td>
    <td><code>App, MainActivity</code><br>
-   App-level controlled navigation via <code>NiaNavHost, NiaTopLevelNavigation</code>
+    mainly depends on navigation module <code>navigation</code>
    </td>
   </tr>
   <tr>
-   <td><code>feature:1,</code><br>
-   <code>feature:2</code><br>
-   ...
+   <td><code>navigation</code>
    </td>
-   <td>Functionality associated with a specific feature or user journey. Typically contains UI components and ViewModels which read data from other modules.<br>
-   Examples include:<br>
-   <ul>
-      <li><a href="https://github.com/android/nowinandroid/tree/main/feature/topic"><code>feature:topic</code></a> displays information about a topic on the TopicScreen.</li>
-      <li><a href="https://github.com/android/nowinandroid/tree/main/feature/foryou"><code>feature:foryou</code></a> which displays the user's news feed, and onboarding during first run, on the For You screen.</li>
-      </ul>
+   <td>Responsible for handling navigation events through out the whole application.<br>
    </td>
-   <td><code>TopicScreen</code><br>
-   <code>TopicViewModel</code>
-   </td>
-  </tr>
-  <tr>
-   <td><code>core:data</code>
-   </td>
-   <td>Fetching app data from multiple sources, shared by different features.
-   </td>
-   <td><code>TopicsRepository</code><br>
-   </td>
-  </tr>
-  <tr>
-   <td><code>core:ui</code>
-   </td>
-   <td>UI components, composables and resources, such as icons, used by different features.
-   </td>
-   <td><code>NiaIcons</code><br>
-   <code>NewsResourceCardExpanded</code>
-   </td>
-  </tr>
-  <tr>
-   <td><code>core:common</code>
-   </td>
-   <td>Common classes shared between modules.
-   </td>
-   <td><code>NiaDispatchers</code><br>
-   <code>Result</code>
-   </td>
-  </tr>
-  <tr>
-   <td><code>core:network</code>
-   </td>
-   <td>Making network requests and handling responses from a remote data source.
-   </td>
-   <td><code>RetrofitNiaNetworkApi</code>
-   </td>
-  </tr>
-  <tr>
-   <td><code>core:testing</code>
-   </td>
-   <td>Testing dependencies, repositories and util classes.
-   </td>
-   <td><code>NiaTestRunner</code><br>
-   <code>TestDispatcherRule</code>
-   </td>
-  </tr>
-  <tr>
-   <td><code>core:datastore</code>
-   </td>
-   <td>Storing persistent data using DataStore.
-   </td>
-   <td><code>NiaPreferences</code><br>
-   <code>UserPreferencesSerializer</code>
-   </td>
-  </tr>
-  <tr>
-   <td><code>core:database</code>
-   </td>
-   <td>Local database storage using Room.
-   </td>
-   <td><code>NiaDatabase</code><br>
-   <code>DatabaseMigrations</code><br>
-   <code>Dao</code> classes
-   </td>
-  </tr>
-  <tr>
-   <td><code>core:model</code>
-   </td>
-   <td>Model classes used throughout the app.
-   </td>
-   <td><code>Topic</code><br>
-   <code>Episode</code><br>
-   <code>NewsResource</code>
+   <td>defines Destinations and core <code>Navigator</code> logic 
    </td>
   </tr>
 </table>
