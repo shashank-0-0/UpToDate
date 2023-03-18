@@ -9,7 +9,7 @@ the latest trends in the android world.Its built entirely with Kotlin and Jetpac
 Currently the app displays a list of Space pictures from the NASA Api and the user can save pictures locally.
 Its still a work in progress 🚧.
 The focus is on writing scalable code so that more feature's can be easily integrated without having the overhead
-of refactoring the a lot of existing code.
+of refactoring a lot of existing code.
 
 # Decisions
 
