@@ -91,10 +91,16 @@ The UI paradigm is an endless cycle of states and events: State -> Event -> Stat
 
 - A *UIState* made of primitives depicts the state of the screen at a particular instant
 - A *UIEvent* depicting all possible events originating from the screens
-- [FlowViewModel](core/domain/src/main/java/FlowViewModel) producing a Flow of UI states and receiving a Flow events.
+- [FlowViewModel](../../core/domain/src/main/java/com/example/domain/FlowViewModel.kt) producing a Flow of UI states and receiving a Flow events.
 - @Composable Screens that transforms UiState to Ui and emitting UIEvents
 
 This way we ensure our Ui is reactive and always has the latest UiState
 
-Typically in MVVM we have repositories and in clean architecture we have 
+### Actions
+
+Actions refers to Functions that have side-effects , For example, sending HTTP requests or querying a database.
+These are alternate to **repositories** in typical MVVM approach or **use cases** in Clean Architecture.
+
+
+
 
