@@ -15,8 +15,8 @@ of refactoring the a lot of existing code.
 
 ## Modularization
 
-The app is fully modularized to ensure each module is as loosely coupled as possible , which provides us with a lot
-of benefits as explained in the official docs.
+Decided to fully modularize the app  to ensure each module is as loosely coupled as possible , which provides us with a lot
+of benefits like scalability , maintainability ,lower build time etc.
 (Note : As of now modularization seems overkill since there is not too much of functionality but it is done by
 keeping scalability in mind)
 
