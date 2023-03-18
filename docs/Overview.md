@@ -31,9 +31,26 @@ The app consists of the following modules.
   <tr>
    <td><code>navigation</code>
    </td>
-   <td>Responsible for handling navigation events through out the whole application.<br>
+   <td>Responsible for handling navigation events through out the whole application .<br>
+    Also defines Destinations
    </td>
-   <td>defines Destinations and core <code>Navigator</code> logic 
+   <td> core <code>Navigator</code> and <code>NavHost</code> <code>navcontroller</code> 
+   </td>
+  </tr>
+  <tr>
+   <td><code>Home</code>
+   </td>
+   <td>Contains Home Screen and is responsible for fetching images by making network request<br>
+   </td>
+   <td> Mainly depends on<code>core:Network</code> <code> core:Persistence</code> 
+   </td>
+  </tr>
+  <tr>
+   <td><code>Favourites</code>
+   </td>
+   <td>Contains Favourites Screen and is responsible for fetching images from database<br>
+   </td>
+   <td> Depends on <code> core:Persistence</code> 
    </td>
   </tr>
 </table>
