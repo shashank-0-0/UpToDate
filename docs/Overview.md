@@ -83,3 +83,18 @@ The app consists of the following modules.
 </table>
 
 
+## Architecture
+
+The architecture is primarily MVVM + Functional Reactive programming paradigm
+
+The UI paradigm is an endless cycle of states and events: State -> Event -> State' -> Event' -> State'' -> ….
+
+- A *UIState* made of primitives depicts the state of the screen at a particular instant
+- A *UIEvent* depicting all possible events originating from the screens
+- [FlowViewModel](core/domain/src/main/java/FlowViewModel) producing a Flow of UI states and receiving a Flow events.
+- @Composable Screens that transforms UiState to Ui and emitting UIEvents
+
+This way we ensure our Ui is reactive and always has the latest UiState
+
+Typically in MVVM we have repositories and in clean architecture we have 
+
