@@ -91,7 +91,7 @@ The UI paradigm is an endless cycle of states and events: State -> Event -> Stat
 
 - A *UIState* made of primitives depicts the state of the screen at a particular instant
 - A *UIEvent* depicting all possible events originating from the screens
-- [FlowViewModel](core/) producing a Flow of UI states and receiving a Flow events.
+- [FlowViewModel](../core/domain/src/main/java/com/example/domain/FlowViewModel.kt) producing a Flow of UI states and receiving a Flow events.
 - @Composable Screens that transforms UiState to Ui and emitting UIEvents
 
 This way we ensure our Ui is reactive and always has the latest UiState
