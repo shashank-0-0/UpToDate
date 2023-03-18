@@ -34,13 +34,13 @@ The app consists of the following modules.
    <td>Responsible for handling navigation events through out the whole application .<br>
     Also defines Destinations
    </td>
-   <td> core <code>Navigator</code> and <code>NavHost</code> <code>navcontroller</code> 
+   <td> contains <code>Navigator</code> and <code>NavHost</code> <code>navcontroller</code> 
    </td>
   </tr>
   <tr>
    <td><code>Home</code>
    </td>
-   <td>Contains Home Screen and is responsible for fetching images by making network request<br>
+   <td>Contains Home Screen and uses <code>core:Network</code> to fetch images from network<br>
    </td>
    <td> Mainly depends on<code>core:Network</code> <code> core:Persistence</code> 
    </td>
@@ -51,6 +51,33 @@ The app consists of the following modules.
    <td>Contains Favourites Screen and is responsible for fetching images from database<br>
    </td>
    <td> Depends on <code> core:Persistence</code> 
+   </td>
+  </tr>
+  <tr>
+   <td><code>Core:Domain</code>
+   </td>
+   <td>Contains all the top level abstract declarations used through out the application <br>
+   Also includes data models
+   </td>
+   <td>contains <code> FlowAction</code> <code> SharedFlowAction</code> <code>FlowViewMoel</code> 
+   </td>
+  </tr>
+  <tr>
+   <td><code>Core:Network</code>
+   </td>
+   <td>Handles logic for  fetching data from the network using ktor for Http request and exposing  <br>
+   that as Action for other modules to use
+   </td>
+   <td> <code>ImageDto</code> <code>NetworkFlowAction</code>
+   </td>
+  </tr>
+<tr>
+   <td><code>Core:Persistence</code>
+   </td>
+   <td>Handles logic related to persistence and exposes the functionality <br>
+    as Actions for other modules to use
+   </td>
+   <td> <code>coreDb</code><code>ImageDao</code> <code>ImageEntity</code>
    </td>
   </tr>
 </table>
