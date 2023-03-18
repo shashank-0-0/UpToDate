@@ -32,7 +32,7 @@ Every FRP program starts with an initial state that will be updated with each ev
 
 ![Design](https://static.wixstatic.com/media/fdfbff_c281e26662c8470dbb260e3c97e6a510~mv2.png)
 
-The architecture followed is described in a little more detail in [overview](docs\Overview.md)
+The architecture followed is described in a little more detail in [overview](docs/Overview.md)
 
 ## Tech Stack
 
